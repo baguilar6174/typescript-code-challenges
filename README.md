@@ -12,7 +12,7 @@ For example, to run the code in the `two-sum` directory, you would run: `yarn de
 
 ## Available problems
 
-- [Two Sum](src\two-sum)
+- [Two Sum](./src/two-sum)
 
 ## Stay in touch
 
