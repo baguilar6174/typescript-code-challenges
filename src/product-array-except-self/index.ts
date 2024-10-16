@@ -1,4 +1,4 @@
-function productExceptSelf(nums: number[]): number[] {
+export function productExceptSelf(nums: number[]): number[] {
 	const answer: number[] = Array(nums.length).fill(1);
 
 	// Complexity O(n²)
@@ -26,7 +26,7 @@ function productExceptSelf(nums: number[]): number[] {
 	return answer;
 }
 
-const productArrayExceptSelfCase1 = productExceptSelf([1, 2, 3, 4]); // [24,12,8,6]
-const productArrayExceptSelfCase2 = productExceptSelf([-1, 1, 0, -3, 3]); // [0,0,9,0,0]
+const case1 = productExceptSelf([1, 2, 3, 4]); // [24,12,8,6]
+const case2 = productExceptSelf([-1, 1, 0, -3, 3]); // [0,0,9,0,0]
 
-console.log({ productArrayExceptSelfCase1, productArrayExceptSelfCase2 });
+console.log({ case1, case2 });

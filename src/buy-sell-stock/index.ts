@@ -1,4 +1,4 @@
-function maxProfit(prices: number[]): number {
+export function maxProfit(prices: number[]): number {
 	let minPrice = Infinity; // we garantee that minPrice is always smaller than prices[i]
 	let maxProfit = 0;
 
@@ -14,7 +14,7 @@ function maxProfit(prices: number[]): number {
 	return maxProfit;
 }
 
-const maxProfitCase1 = maxProfit([7, 1, 5, 3, 6, 4]); // 5
-const maxProfitCase2 = maxProfit([7, 6, 4, 3, 1]); // 0
+const case1 = maxProfit([7, 1, 5, 3, 6, 4]); // 5
+const case2 = maxProfit([7, 6, 4, 3, 1]); // 0
 
-console.log({ maxProfitCase1, maxProfitCase2 });
+console.log({ case1, case2 });

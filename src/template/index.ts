@@ -1,5 +1,5 @@
-function yourFunction() {}
+export function yourFunction() {}
 
-const yourFunctionCase1 = yourFunction(); // Expected result
+const case1 = yourFunction(); // Expected result
 
-console.log({ yourFunctionCase1 });
+console.log({ case1 });
