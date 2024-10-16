@@ -5,9 +5,10 @@ import fs from 'fs';
 const entryFile: string | undefined = process.argv[2];
 
 const getDirectories = (source: string): string[] => {
-	return fs.readdirSync(source).filter((name) => {
-		return fs.statSync(path.join(source, name)).isDirectory();
-	});
+	return fs
+		.readdirSync(source)
+		.filter((name) => name != 'template')
+		.filter((name) => fs.statSync(path.join(source, name)).isDirectory());
 };
 
 if (!entryFile) {
